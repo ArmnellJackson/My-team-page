@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    /* background: #777; */
+    background: linear-gradient(45deg, #ED1D24, #03256C);
+    /* Fondo degradado de rojo a azul para los colores de Marvel y DC */
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
+@keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 71px 85px 71px 26px;
+}
+
+header h1 {
+    font-size: 3.6rem;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    line-height: 47.7px;
+    width: 100%;
+    height: 47px;
+}
+
+header div {
+    margin-top: 38px;
+}
+
+header div h2 {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 27px;
+}
+
+header div p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 21px;
+    width: 343px;
+    height: 87px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 0 10px;
+    justify-items: center;
+}
+
+main article:nth-child(2),
+article:nth-child(4),
+article:nth-child(6) {
+    margin-top: 48px;
+}
+
+article {
+    width: 178px;
+    height: 262px;
+    background: white;
+    position: relative;
+    background: transparent;
+}
+
+article img {
+    width: 90%;
+    height: 90%;
+    /* margin-bottom: 10px; */
+}
+
+.card-1 p:nth-child(3) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 42px;
+    right: -42px;
+}
+
+.card-2 p:nth-child(3) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 112px;
+    right: -112px;
+}
+
+.card-3 p:nth-child(3) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 49px;
+    right: -49px;
+}
+
+.card-4 p:nth-child(3) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 68px;
+    right: -68px;
+}
+
+.card-5 p:nth-child(3) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 15px;
+    right: -15px;
+}
+
+.card-6 p:nth-child(3) {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 58px;
+    right: -59px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin: 72px 0 24px 0;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 17px;
+}
